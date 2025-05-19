@@ -6,10 +6,10 @@ export async function getAllFoods(req: Request, res: Response) {
   try {
     const foods = await storage.getAllFoods();
     
-    // Convert prices from cents to dollars for the frontend
+    // Convert prices from cents to rupees for the frontend
     const formattedFoods = foods.map(food => ({
       ...food,
-      price: food.price / 100,
+      price: (food.price / 100) * 83, // Convert to rupees (assuming 1 USD = 83 INR)
       rating: food.rating / 10
     }));
     
@@ -35,10 +35,10 @@ export async function getFoodById(req: Request, res: Response) {
       return res.status(404).json({ message: 'Food item not found' });
     }
     
-    // Convert price from cents to dollars
+    // Convert price from cents to rupees
     const formattedFood = {
       ...food,
-      price: food.price / 100,
+      price: (food.price / 100) * 83, // Convert to rupees (assuming 1 USD = 83 INR)
       rating: food.rating / 10
     };
     
@@ -60,10 +60,10 @@ export async function getFoodsByCategory(req: Request, res: Response) {
     
     const foods = await storage.getFoodsByCategory(category);
     
-    // Convert prices from cents to dollars
+    // Convert prices from cents to rupees
     const formattedFoods = foods.map(food => ({
       ...food,
-      price: food.price / 100,
+      price: (food.price / 100) * 83, // Convert to rupees (assuming 1 USD = 83 INR)
       rating: food.rating / 10
     }));
     

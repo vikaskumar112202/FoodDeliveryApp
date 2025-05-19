@@ -71,7 +71,7 @@ export function FoodCard({ item }: FoodCardProps) {
       <CardContent className="p-4">
         <div className="flex justify-between">
           <h3 className="font-poppins font-semibold text-lg">{item.name}</h3>
-          <span className="text-primary font-medium">${item.price.toFixed(2)}</span>
+          <span className="text-primary font-medium">₹{item.price.toFixed(2)}</span>
         </div>
         <p className="text-gray-600 text-sm mt-1">{item.description}</p>
         <div className="flex items-center mt-2">

@@ -29,7 +29,7 @@ export function CartItemRow({ item }: CartItemsProps) {
       />
       <div className="flex-grow">
         <h3 className="font-medium">{item.name}</h3>
-        <span className="text-primary">${item.price.toFixed(2)}</span>
+        <span className="text-primary">₹{item.price.toFixed(2)}</span>
       </div>
       <div className="flex items-center">
         <button 

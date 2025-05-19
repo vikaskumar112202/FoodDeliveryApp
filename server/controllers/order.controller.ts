@@ -65,13 +65,13 @@ export async function createOrder(req: Request, res: Response) {
       phone: data.phone
     });
     
-    // Format the response (convert cents back to dollars)
+    // Format the response (convert cents back to rupees)
     const formattedOrder = {
       ...order,
-      total: order.total / 100,
+      total: (order.total / 100) * 83, // Convert to rupees (assuming 1 USD = 83 INR)
       items: order.items.map(item => ({
         ...item,
-        price: item.price / 100
+        price: (item.price / 100) * 83 // Convert to rupees
       }))
     };
     
@@ -91,13 +91,13 @@ export async function getUserOrders(req: Request, res: Response) {
     
     const orders = await storage.getOrdersByUserId(req.user.id);
     
-    // Format the orders (convert cents to dollars)
+    // Format the orders (convert cents to rupees)
     const formattedOrders = orders.map(order => ({
       ...order,
-      total: order.total / 100,
+      total: (order.total / 100) * 83, // Convert to rupees (assuming 1 USD = 83 INR)
       items: order.items.map(item => ({
         ...item,
-        price: item.price / 100
+        price: (item.price / 100) * 83 // Convert to rupees
       }))
     }));
     
@@ -132,13 +132,13 @@ export async function getOrderById(req: Request, res: Response) {
       return res.status(403).json({ message: 'Forbidden: You can only access your own orders' });
     }
     
-    // Format the order (convert cents to dollars)
+    // Format the order (convert cents to rupees)
     const formattedOrder = {
       ...order,
-      total: order.total / 100,
+      total: (order.total / 100) * 83, // Convert to rupees (assuming 1 USD = 83 INR)
       items: order.items.map(item => ({
         ...item,
-        price: item.price / 100
+        price: (item.price / 100) * 83 // Convert to rupees
       }))
     };
     
