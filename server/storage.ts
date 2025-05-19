@@ -200,7 +200,7 @@ export class MemStorage implements IStorage {
         name: 'Pad Thai Noodles',
         description: 'Stir-fried rice noodles with eggs, tofu, bean sprouts, and peanuts',
         price: 1199, // $11.99
-        image: 'https://images.unsplash.com/photo-1637806931079-e371f6eb09f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+        image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
         rating: 40, // 4.0 stars
         reviews: 156,
         category: 'Noodles'
