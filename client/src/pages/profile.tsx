@@ -143,13 +143,13 @@ export default function Profile() {
                                           </span>
                                           <span>{item.name}</span>
                                         </div>
-                                        <span>${(item.price * item.quantity).toFixed(2)}</span>
+                                        <span>₹{(item.price * item.quantity).toFixed(2)}</span>
                                       </div>
                                     ))}
                                   </div>
                                   <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
                                     <span className="font-medium">Total</span>
-                                    <span className="font-medium">${order.total.toFixed(2)}</span>
+                                    <span className="font-medium">₹{order.total.toFixed(2)}</span>
                                   </div>
                                   <div className="flex justify-between items-center mt-2 text-sm text-gray-500">
                                     <span>Payment Method</span>
