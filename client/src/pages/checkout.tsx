@@ -266,15 +266,15 @@ export default function Checkout() {
                     <div className="space-y-3 pt-4 border-t border-gray-200">
                       <div className="flex justify-between">
                         <span className="text-gray-600">Subtotal</span>
-                        <span>${subtotal.toFixed(2)}</span>
+                        <span>₹{subtotal.toFixed(2)}</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Delivery Fee</span>
-                        <span>${deliveryFee.toFixed(2)}</span>
+                        <span>₹{deliveryFee.toFixed(2)}</span>
                       </div>
                       <div className="flex justify-between font-semibold text-lg pt-2 border-t border-gray-200">
                         <span>Total</span>
-                        <span>${total.toFixed(2)}</span>
+                        <span>₹{total.toFixed(2)}</span>
                       </div>
                     </div>
                   </CardContent>

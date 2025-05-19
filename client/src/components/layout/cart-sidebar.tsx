@@ -36,15 +36,15 @@ export default function CartSidebar() {
           <div className="p-4 border-t border-gray-200">
             <div className="flex justify-between mb-4">
               <span className="font-medium">Subtotal</span>
-              <span className="font-medium">${subtotal.toFixed(2)}</span>
+              <span className="font-medium">₹{subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between mb-4">
               <span className="text-gray-600">Delivery Fee</span>
-              <span className="text-gray-600">${deliveryFee.toFixed(2)}</span>
+              <span className="text-gray-600">₹{deliveryFee.toFixed(2)}</span>
             </div>
             <div className="flex justify-between mb-4">
               <span className="font-semibold">Total</span>
-              <span className="font-semibold">${total.toFixed(2)}</span>
+              <span className="font-semibold">₹{total.toFixed(2)}</span>
             </div>
             <Link href="/checkout">
               <button 

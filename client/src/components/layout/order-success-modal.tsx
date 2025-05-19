@@ -33,7 +33,7 @@ export default function OrderSuccessModal({ isOpen, onClose, orderDetails }: Ord
             </div>
             <div className="flex justify-between mb-2">
               <span className="text-gray-600">Total Amount:</span>
-              <span className="font-medium">${orderDetails.total.toFixed(2)}</span>
+              <span className="font-medium">₹{orderDetails.total.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-600">Estimated Delivery:</span>
