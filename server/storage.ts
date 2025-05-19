@@ -200,7 +200,7 @@ export class MemStorage implements IStorage {
         name: 'Pad Thai Noodles',
         description: 'Stir-fried rice noodles with eggs, tofu, bean sprouts, and peanuts',
         price: 1199, // $11.99
-        image: 'https://images.unsplash.com/photo-1626804475297-41608ea89f86?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+        image: 'https://images.unsplash.com/photo-1637806931079-e371f6eb09f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
         rating: 40, // 4.0 stars
         reviews: 156,
         category: 'Noodles'
@@ -209,7 +209,7 @@ export class MemStorage implements IStorage {
         name: 'Crispy Fried Chicken',
         description: 'Crunchy fried chicken with secret blend of herbs and spices',
         price: 1049, // $10.49
-        image: 'https://images.unsplash.com/photo-1626082927389-6cd097cee6a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+        image: 'https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
         rating: 45, // 4.5 stars
         reviews: 203,
         category: 'Burgers'
