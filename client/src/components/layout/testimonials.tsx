@@ -13,27 +13,27 @@ export default function Testimonials() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Sumit Kumar",
       role: "Customer",
       rating: 5,
       text: "\"The food arrived hot and fresh. The delivery was faster than I expected. Will definitely order again!\"",
-      initials: "JD"
+      initials: "SK"
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Tisha Jain",
       role: "Customer",
       rating: 4.5,
       text: "\"Love the cash on delivery option. Makes ordering food so much more convenient. The food quality is consistently good.\"",
-      initials: "JS"
+      initials: "TJ"
     },
     {
       id: 3,
-      name: "Robert Johnson",
+      name: "Tarun Kumar",
       role: "Customer",
       rating: 5,
       text: "\"The app is so easy to use. I can quickly find my favorite restaurants and order in just a few taps. Great service!\"",
-      initials: "RJ"
+      initials: "TK"
     }
   ];
   

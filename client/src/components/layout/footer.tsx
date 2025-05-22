@@ -79,11 +79,11 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-2"></i>
-                <span>123 College Street, Your City, 12345</span>
+                <span>Foolivery near SRS, Bijnor, 246701</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone-alt mr-2"></i>
-                <span>+1 (123) 456-7890</span>
+                <span>+91 (123) 456-7890</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-2"></i>
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Foolivery. All rights reserved. Created for college project.</p>
+          <p>&copy; {new Date().getFullYear()} Foolivery. All rights reserved.</p>
         </div>
       </div>
     </footer>

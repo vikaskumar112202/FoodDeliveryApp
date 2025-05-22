@@ -44,12 +44,12 @@ export async function createOrder(req: Request, res: Response) {
     const items: OrderItem[] = data.items.map(item => ({
       id: item.id,
       name: item.name,
-      price: Math.round(item.price * 100), // Convert to cents
+      price: Math.round(item.price), // Convert to cents
       quantity: item.quantity
     }));
     
     // Calculate total in cents
-    const total = Math.round(data.total * 100);
+    const total = Math.round(data.total);
     
     // Prepare the full address
     const fullAddress = `${data.address}, ${data.city}, ${data.zipCode}${data.additionalNotes ? ` (${data.additionalNotes})` : ''}`;

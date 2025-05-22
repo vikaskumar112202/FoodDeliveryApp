@@ -27,10 +27,10 @@ export default function About() {
               <div>
                 <h2 className="text-2xl font-poppins font-semibold mb-4">Our Story</h2>
                 <p className="text-gray-600 mb-4">
-                  Foolivery was founded in 2023 as a college project with a simple goal: to make food delivery accessible to everyone. What started as a class assignment quickly grew into a passion project.
+                  Foolivery was founded in 2025 with a simple goal: to make food delivery accessible to everyone.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Our team of student developers wanted to create a platform that was easy to use, reliable, and focused on customer satisfaction. We understand the challenges of balancing studies and finding time to cook, which is why we created a service that brings delicious food right to your doorstep.
+                  Our team of developers wanted to create a platform that was easy to use, reliable, and focused on customer satisfaction. We understand the challenges of balancing studies and finding time to cook, which is why we created a service that brings delicious food right to your doorstep.
                 </p>
                 <p className="text-gray-600">
                   Today, Foolivery partners with local restaurants to deliver quality meals at affordable prices, with a simple cash-on-delivery payment option that works for everyone.

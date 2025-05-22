@@ -148,7 +148,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-medium text-lg">Address</h3>
-                        <p className="text-gray-600">123 College Street, Your City, 12345</p>
+                        <p className="text-gray-600">Foolivery near SRS, Bijnor, 246701</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -157,7 +157,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-medium text-lg">Phone</h3>
-                        <p className="text-gray-600">+1 (123) 456-7890</p>
+                        <p className="text-gray-600">+91 (123) 456-7890</p>
                       </div>
                     </div>
                     <div className="flex items-start">
